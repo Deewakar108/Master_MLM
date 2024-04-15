@@ -1,0 +1,38 @@
+project name: Ocean Ayurveda Pvt. Ltd.
+url:  http://oceanhealthpariwar.com/
+server: 6
+
+
+===============================================
+11/06/2018 :kamal working home page design.
+11/06/2018 : Nishat make business plan page, reward page.
+11/06/2018:- Add admin secton and live on main domain
+
+15/06/2018:- SUJEET : Update SMS feature.
+
+18/06/2018:- SUJEET : Database Clean.
+19/06/2018:- SUJEET : Update Joing Page.
+
+25/06/2018:- SUJEET : Registration page update 
+		      using Left-To-Left.Right-To-Right
+
+26/06/2018:- SUJEET : Add My Team Page In Member/Admin Profile.
+
+26/06/2018:- SUJEET :   Update client request.
+			SMS in MakePayment Page.
+			Show Mobile On Website.
+			
+
+26/06/2018:- SUJEET :	Published.
+01/08/2018:- SUJEET :	Royalty Issues update and published.
+21/08/2018:- wahab:	making franchise
+25/08/2018:- wahab:	making make franchise
+31/08/2018:- DEV - Royalty Closing.
+
+27/09/2018:- Nishat : Work on business plan page.
+11/10/2018:- Nishat : Work on admin make add product page, edit product page and work on product page.
+12/10/2018:- Nishat : Work on homepage make dynamic product section.
+23/01/2019:- Shahnawaz work on member section, admin section and ferinchase section
+
+
+

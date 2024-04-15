@@ -1,0 +1,15 @@
+﻿Create Table dbo.[closing] ( [initialdate] varchar (500)  NULL ,
+[Start_date] varchar (500)  NULL ,
+[End_date] varchar (500)  NULL ,
+[date] varchar (500)  NULL ,
+[ID] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[Deleteid] int  NULL ,
+[Idate] int  NULL ,
+[Closingno] varchar (500)  NULL ,
+[Closing_Time] varchar (500)  NULL ,
+[Time_interval] varchar (500)  NULL ,
+[I_Start_date] int  NULL ,
+[I_End_date] int  NULL ,
+[ClosingStatus] varchar (500)  NULL ,
+[Interval] varchar (500)  NULL   );
+

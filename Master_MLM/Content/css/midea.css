@@ -1,0 +1,110 @@
+﻿
+
+
+
+@media only screen and (max-width:800px) {
+    .container-small {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .padd-right {
+        padding-right: 15px !important;
+    }
+
+    .padd-left {
+        padding-left: 15px !important;
+    }
+
+    .header-sec {
+        background-image: none !important;
+        background-color: #f7f9fa !important;
+    }
+
+    .header-image {
+        padding: 0px 0px 0px 0px !important;
+        margin: 10px 0px 0px 0px !important;
+    }
+
+
+    .menu-bg {
+        background-image: none !important;
+        background: #5c2461 !important;
+    }
+
+    .welcome-img {
+        margin: 3px 0px 5px 0px !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .mobile-social-sec {
+        display: inherit !important;
+    }
+
+    .social-wraper-bg {
+        display: none !important;
+    }
+
+    .social_ul {
+        margin: 15px 0px 13px 0px !important;
+        text-align: center !important;
+    }
+
+    .footer {
+        margin: 0px 0px 0px 0px !important;
+    }
+
+
+    .copyright_p {
+        text-align: center !important;
+    }
+
+    .designer_link {
+        text-align: center !important;
+    }
+
+    .footer-h {
+        margin: 25px 0px 5px 0px !important;
+    }
+
+    .login-ul {
+        margin: 6px 0px 2px 0px;
+    }
+
+    .nav-tabs > li {
+        float: none !important;
+        margin: 0px auto !important;
+        margin-bottom: -1px;
+    }
+
+    .pull-right {
+        float: right!important;
+    }
+
+    .menu-toggler {
+        margin: 7px 0px 5px 0px !important;
+    }
+
+    .services-sec {
+        padding: 25px 0px 0px 0px !important;
+    }
+
+    .login-btn-ul li a span {
+        margin: 4px 0px 0px 0px !important;
+    }
+
+    .login-btn-ul li a i {
+        font-size: 24px;
+        padding: 3px 10px 3px 10px !important;
+    }
+    .welcome-sec-iner {
+        margin: 0px 0px 10px 0px;
+        padding: 0px 00px;
+    }
+    .scrol-sec-iner {
+        margin: 20px 0px 0px 0px;
+    }
+    .reward-slider-iner { 
+        width: 94%;
+    }
+}

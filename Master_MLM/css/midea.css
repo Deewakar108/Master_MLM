@@ -1,0 +1,144 @@
+﻿
+
+
+
+@media only screen and (max-width:800px) {
+    .container-small {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .padd-right {
+        padding-right: 15px !important;
+    }
+
+    .padd-left {
+        padding-left: 15px !important;
+    }
+   
+ /*********************start***************************/
+ .content-sec {
+        text-align: center;
+    }
+    .content-sec-ul {
+        text-align:center;
+    }
+    .social-sec-a {
+        border-left:none;
+            padding: 5px 1px 5px 1px;
+    }
+
+    .social-sec-ul {
+        text-align: center;
+    }
+    .welcom-pa {
+            padding: 0px 10px 0px 10px;
+    }
+
+    .welcom-pa-p {
+        text-align:justify;
+    }
+    .welcome-sec-main-h2 {
+        font-size:25px;
+            margin-bottom: 25px;
+                padding-top: 11px;
+    }
+   
+
+    .our-section {
+            margin: 0px 0px 20px 0px;
+    }
+    .our-miss-h2 {
+        font-size: 25px;
+    }
+    .ourservice-sec {
+            margin: 60px 0px 30px 0px;
+    }
+    .logo {
+            padding: 0px 0px 8px 0px;
+    }
+
+/********************latest news****************/
+ .welcome-rewards {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .welcome-reward2 {
+            margin: 80px 0px 0px 0px;
+    }
+    .rewards-border-green {
+          margin: 80px 0px 0px 0px;
+    }
+    .rewards {
+        margin: 80px 0px 30px 0px;
+    }
+
+/************************************/
+/********************************footer*****************/
+	
+    .about-footer-sec {
+            margin: 10px 0px 0px 0px;
+    }
+    .about-footer-sec-h2:before {
+            top: 50px;
+        
+    }
+    .about-footer-sec-h2 {
+          margin: 0px 0px 20px 0px;
+    }
+
+    .footer-down-iner p {
+    font-size: 16px;
+    text-align: center;
+    }
+    .social-icons-ul {
+            text-align: center;
+    }
+    .social-icons {
+     padding: 0px 0px 10px 0px;
+    }
+
+    .rev_slider .tp-mask-wrap .tp-caption,
+.rev_slider .tp-mask-wrap *:last-child,
+.wpb_text_column .rev_slider .tp-mask-wrap .tp-caption,
+.wpb_text_column .rev_slider .tp-mask-wrap *:last-child {
+    display:none;
+}
+    .ser-image {
+        min-height: 410px;
+    }
+    .latest-news ul li a {
+            font-size: 14px;
+    }
+    .our-product-h2 {
+        margin: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    }
+
+    .welcome-section {
+            margin: 50px 0px 0px 0px;
+    }
+
+    .ocien-text-p {
+        text-align:justify;
+        line-height:25px;
+       padding:10px 0px 10px 0px;
+    }
+    .figure-p {
+        font-size:12px;
+    }
+
+    .legal-imgone {
+         padding:0px 0px 0px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+}

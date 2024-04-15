@@ -1,0 +1,431 @@
+
+
+
+
+.ints-ul {
+    padding-left: 55px;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+
+    .ints-ul li {
+        float: left;
+        width: 100%;
+        position: relative;
+        line-height: 30px;
+        list-style-type: none;
+    }
+
+        .ints-ul li:before {
+            content: "\f00c";
+            width: 5px;
+            height: 5px;
+            font-family: fontawesome;
+            position: absolute;
+            left: -20px;
+            top: 0px;
+        }
+
+
+.registration a:first-child {
+    border-left: 0;
+}
+
+.menubar {
+    float: left;
+    width: 100%;
+}
+
+nav {
+}
+
+.menubar nav > ul {
+    padding: 0;
+    margin: 6px 0px 6px 0px;
+}
+
+    .menubar nav > ul > li {
+        width: auto;
+        /*font-family: montserrat;*/
+        font-size: 13px;
+        color: #555555;
+        letter-spacing: 0.3px;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+        .menubar nav > ul > li:before {
+            display: none;
+        }
+
+        .menubar nav > ul > li > a {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 12px 23px;
+            font-size: 17px;
+            color: #fff;
+            border-right: 1px solid #013fde;
+            border-left: 1px solid #1757fd;
+            text-transform: capitalize !important;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 24px;
+            letter-spacing: .5px;
+        }
+
+            .menubar nav > ul > li > a:hover {
+                color: #ffd813 !important;
+            }
+
+/*=============== Dropdown ===================*/
+nav > ul ul {
+    position: absolute;
+    top: 100%;
+    right: -300px;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    min-width: 600px;
+    padding: 23px 0;
+    background: #fff;
+}
+
+    nav > ul ul:before {
+        content: '';
+        background: url(../menu/menu-arrow.png) no-repeat;
+        width: 28px;
+        height: 13px;
+        position: absolute;
+        top: -10px;
+        left: 35%;
+    }
+
+    nav > ul ul li {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 0 20px;
+        color: #333;
+        position: relative;
+        text-transform: none;
+        letter-spacing: 1px;
+        display: table;
+        width: 30%!important;
+        background: #fff;
+    }
+
+        nav > ul ul li:before {
+            display: none;
+        }
+
+        nav > ul ul li a {
+            border-bottom: 1px solid #dfdfdf;
+            padding: 6px 0;
+            float: left;
+            width: 100%;
+            color: #000;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: "Open Sans",sans-serif;
+        }
+
+            nav > ul ul li a:hover {
+                color: #000;
+            }
+
+        nav > ul ul li:last-child > a {
+            border: 0;
+        }
+
+nav > ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav > ul ul ul {
+    left: 100%;
+    top: 0;
+    background: #f5f5f5;
+    min-width: 215px;
+    box-shadow: none;
+}
+
+    nav > ul ul ul li a {
+        border: 0;
+    }
+
+nav > ul ul li.has-children:before {
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    font-family: fontawesome;
+    font-size: 14px;
+    color: inherit;
+}
+/*=============== Responsive Header ===================*/
+.responsive-header {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+    display: none;
+}
+
+    .responsive-header .topbar {
+        padding: 15px;
+    }
+
+        .responsive-header .topbar:after,
+        .responsive-header .topbar:before {
+            display: none;
+        }
+
+        .responsive-header .topbar span {
+            margin-right: 20px;
+        }
+
+.responsive-logobar {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0px 2px;
+}
+
+.responsive-logo {
+    float: left;
+}
+
+.menu-button {
+    float: right;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 42px;
+    color: #272727;
+    font-size: 29px;
+    position: absolute;
+    right: 10px;
+    top: -51px;
+}
+
+    .menu-button:hover {
+        color: #FFF;
+    }
+
+.responsive-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    opacity: 0;
+    background: #000000d4;
+    overflow: auto;
+    -webkit-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: all 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
+    -webkit-transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
+}
+
+    .responsive-menu.slidein {
+        left: 0;
+        opacity: 1;
+    }
+
+    .responsive-menu ul {
+        float: left;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+        .responsive-menu ul li {
+            float: left;
+            width: 100%;
+            font-size: 13px;
+            /*font-family: poppins;*/
+            border-bottom: 1px solid #D3D3D3;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 900;
+            margin: 0;
+            line-height: unset;
+            list-style-type: none;
+        }
+
+            .responsive-menu ul li:before {
+                display: none;
+            }
+
+            .responsive-menu ul li a {
+                float: left;
+                width: 100%;
+                padding: 15px 0px;
+                position: relative;
+                color: #fff;
+                font-size: 13px;
+                text-align: left;
+                text-transform: capitalize;
+            }
+
+            .responsive-menu ul li.menu-item-has-children > a:before {
+                content: "\f067";
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 10px;
+                height: 10px;
+                color: #333;
+                font-family: fontawesome;
+                font-size: 15px;
+            }
+
+            .responsive-menu ul li ul {
+                display: none;
+                padding-left: 20px;
+                background: rgba(0,0,0,0.1);
+            }
+
+            .responsive-menu ul li:last-child {
+                border: 0;
+            }
+
+.close-menu {
+    float: right;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 39px;
+    margin: 30px;
+    font-size: 29px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*------------------------Midea-----------------------------------*/
+@media (max-width:980px) {
+    header {
+        display: none;
+    }
+
+    .responsive-header {
+        display: block;
+    }
+}
+
+@media (max-width:767px) {
+
+    .responsive-header .topbar span {
+        float: none;
+        display: inline-block;
+        margin: 0 6px;
+    }
+
+    .responsive-header .topbar {
+        text-align: center;
+    }
+}
+
+/*-----------------------------Color--------------------------------------*/
+.button.active,
+.selectors-inner a.active,
+.course-bar span,
+.prog-icon span,
+.event-btn,
+.widget .about-widget li span,
+.edu-gallery,
+.pagination li a:hover,
+.pagination li a.active,
+.share-post > a:hover,
+.reply,
+.tagcloud > a:hover,
+.course-price,
+.touch ul li span,
+.layer4,
+.menu-button,
+.close-menu,
+.toggle-item > h2:before,
+.transparent-socials a:hover {
+    background-color: #fdd821;
+}
+
+a:hover,
+a:active,
+a:focus,
+.topbar span > i,
+ul li:before,
+.title span,
+.button:hover,
+.explore-edu h2 i,
+.tab-content span,
+.parallax-title i,
+.parallax-title span,
+.side-title h2 i,
+.side-title span,
+.staff-detail span,
+.event-date span,
+.event-description > i,
+.loc,
+.post-detail span,
+.widget-title h5 i,
+.widget-title span,
+.widget li a:hover i.fa,
+.widget .about-widget li,
+.bottom-footer p a,
+.edu-service i,
+.edu-detail > i,
+.options li a.selected,
+.breadcrumbs li,
+.column-title i,
+.column-title h2 span,
+.date > span,
+.sub-title,
+.detail-page .meta li.meta-tags a,
+.author-detail > h5,
+.simple-title h2 span,
+.simple-title > i,
+.comment-name > i,
+.post-inner > span,
+.sidebar .widget li:hover > a,
+.video-widget > span,
+.course-info > span,
+.author-detail > span,
+.author-detail > h4 i,
+.event-intro-details > i,
+.member-intro-description > span,
+.personal-info li,
+.touch ul li p strong,
+.layer1,
+.layer2 span,
+.layer6,
+.simple-parallax-title > h2 span,
+.error-page > h1,
+.search-result > h5 span {
+    color: #0C4682;
+}
+
+    .button:hover,
+    .course-bar span:before,
+    .course-bar span:after,
+    .course-price:before,
+    .course-price:after,
+    .event-btn:hover,
+    .options li a.selected:before,
+    .sidebar .widget li:hover:after,
+    .layer4 {
+        border-color: #0C4682;
+    }

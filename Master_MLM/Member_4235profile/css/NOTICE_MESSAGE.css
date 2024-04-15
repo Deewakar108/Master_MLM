@@ -1,0 +1,27 @@
+﻿.notificationpan {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: -400px;
+    right: 10px;
+    padding: 10px 10px;
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255, 106, 0)), color-stop(100%,rgb(255, 106, 0)));
+    color: White;
+}
+
+.closenotificationpan {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 6px;
+    right: 6px;
+}
+
+#notification {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}

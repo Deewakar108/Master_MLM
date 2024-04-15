@@ -1,0 +1,71 @@
+﻿.modal-body {
+    background: #f1f1f1;
+}
+
+.main11 {
+    margin: 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    float: left;
+    height: auto;
+}
+
+.login-para {
+    border-bottom: 2px solid #870115;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 5px;
+    height: auto;
+    background: #f0ad4e;
+    line-height: 35px;
+    font-size: 16px;
+    color: White;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-table {
+    width: 100%;
+    height: auto;
+    border-spacing: 0px;
+    font-family: Ebrima;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-size: 13px;
+}
+
+    .login-table td {
+        color: #797777;
+        font-size: 16px;
+    }
+
+    .login-table .form-control {
+        margin-bottom: 7px;
+        -webkit-border-radius: 0 0 0 0;
+        border-radius: 0 0 0 0;
+    }
+
+    .login-table .btn {
+        margin-top: 10px;
+        -webkit-border-radius: 0 0 0 0;
+        border-radius: 0 0 0 0;
+    }
+
+.waiting {
+    padding: 25px 15px 15px 14px;
+    font-size: 16px;
+    bottom: 0px;
+    left: 1px;
+    top: 257px;
+    background: #fff;
+    color: #1a1313;
+    height: 67px!important;
+    z-index: 1000;
+    font-size: 17px;
+    text-align: center;
+    width: 99.8%;
+    position: absolute;
+}

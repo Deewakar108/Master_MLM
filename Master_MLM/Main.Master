@@ -1,0 +1,362 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Master_MLM.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="Ocean Health Pariwar " />
+    <meta name="description" content="Ocean Health Pariwar, Ocean Health Pariwar" />
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <%-- ..........................Fonts........................ --%>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet" />
+
+    <%-- ..........................Css........................ --%>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/midea.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/settings.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+     <%-- ..........................legal gallery........................ --%>
+    <link href="Gallery/simplelightbox.min.css" rel="stylesheet" />
+    <link href="Gallery/style.css" rel="stylesheet" />
+  
+     <%-- ..........................js........................ --%>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <%-- ..........................menu........................ --%>
+    <script src="menu/script.js"></script>
+    <link href="menu/style.css" rel="stylesheet" />
+
+    <style>
+        .fixed {
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 99999;
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+
+        .sticky {
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+    </style>
+    <script>
+        $(window).scroll(function () {
+            var sticky = $('.sticky'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 50) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
+        });
+    </script>
+
+    <%-- .......................top arrow............... --%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <section>
+            <div class="top-content-sec">
+                <div class="container">
+                    <div class="top-content-sec-iner">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="content-sec">
+                                    <ul class="content-sec-ul">
+                                        <li class="content-sec-ul-li"><a class="content-sec-ul-li-a" href="tell:+91-8797195789"><i class="fa fa-phone contenti-sec" aria-hidden="true"></i>
+                                            <asp:Label ID="lblCompanyMobileNo1" runat="server" Text="" ForeColor="White"></asp:Label></a></li>
+                                        <li class="content-sec-ul-li"><a class="content-sec-ul-li-a email-top" href="mailto:info@oceanhealthpariwar.com"><i class="fa fa-envelope-o contenti-sec" aria-hidden="true"></i>
+                                            <asp:Label ID="lblCompanyEmailID1" runat="server" Text="" ForeColor="White"></asp:Label></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <div class="social-sec">
+                                    <ul class="social-sec-ul">
+                                        <li class="social-sec-li"><a  href="loginSection/loginpage.aspx" class="social-sec-a" style="border-left: none;"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a></li>
+                                        <%--<li class="content-sec-li"><a class="social-sec-a" href="RegistrationForm.aspx#Regis">&nbsp;<i class="fa fa-user" aria-hidden="true"></i>&nbsp; Join Now</a></li>--%>
+                                        <li class="social-sec-li"><a href="javascript:" class="social-sec-a"><i class="fa fa-facebook social-sec-i"></i></a></li>
+                                        <li class="social-sec-li"><a href="javascript:" class="social-sec-a"><i class="fa fa-twitter social-sec-i"></i></a></li>
+                                        <li class="social-sec-li"><a href="javascript:" class="social-sec-a"><i class="fa fa-linkedin social-sec-i"></i></a></li>
+                                        <li class="social-sec-li"><a href="javascript:" class="social-sec-a"><i class="fa fa-youtube social-sec-i"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="logo-sec sticky">
+                <div class="container">
+                    <div class="logo-sec-iner">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-10 col-xs-10">
+                                <div class="logo">
+                                    <img src="images/logo.png" class="img-responsive logo-center" title="Ocean Health Pariwar" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-9 col-md-9 col-sm-2 col-xs-2">
+                                <div class="menu-sec">
+                                    <header>
+                                        <div class="header-wrap">
+                                            <div class="menubar">
+                                                <nav>
+                                                    <ul class="ints-ul">
+                                                        <li><a style="border-left: none;" href="Default.aspx" class="home" title="Ocean Health Pariwar">Home</a>  </li>
+                                                        <li><a href="javascript:" title="Ocean Health Pariwar" class="about">About Us</a>
+                                                            <ul>
+                                                                <li><a href="About_Company.aspx#health" class="about" title="Ocean Health Pariwar">About Company</a></li>
+                                                                <li><a href="Mission_Vision.aspx#health" class="about" title="Ocean Health Pariwar">Mission & Vision </a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="javascript:" class="product" title="Ocean Health Pariwar">Product</a> 
+                                                             <ul>
+                                                                <li><a href="product.aspx#health" class="about" title="Ocean Health Pariwar">Binary Product</a></li>
+                                                                <li><a href="Repurchase_product.aspx#health" class="about" title="Ocean Health Pariwar">Repurchase Product</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="Business-plan.aspx#health" class="plan" title="Ocean Health Pariwar">Business Plan</a> </li>
+
+                                                        <li><a href="Reward.aspx#health" class="rew" title="Ocean Health Pariwar">Rewards</a> </li>
+                                                        <li><a href="Legal.aspx#health" class="product" title="Ocean Health Pariwar">Legal</a> </li>
+                                                        <li><a href="javascript:" class="gall" title="Ocean Health Pariwar">Gallery</a>
+                                                            <ul>
+                                                                <li><a href="javascript:" class="gall" title="Ocean Health Pariwar">Image Gallery</a></li>
+                                                                <li><a href="javascript:" class="gall" title="Ocean Health Pariwar">Video Gallery</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="contact_us.aspx#health" class="contact" title="Ocean Health Pariwar">Contact Us</a></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <!-- Header Wrap -->
+                                    </header>
+                                    <!-- Header -->
+                                    <div class="responsive-header">
+                                        <div class="responsive-logobar">
+                                            <a class="menu-button" href="#" title=""><i class="fa fa-bars"></i></a>
+                                        </div>
+                                        <!-- Responsive Logbar -->
+                                        <div class="responsive-menu">
+                                            <div class="responsive-menu-bg">
+                                                <div class="mob-logo">
+                                                    <img src="Images/logo.png" class="img-responsive logo-img" />
+                                                </div>
+
+                                                <a class="close-menu" href="#" title=""><i class="fa fa-remove"></i></a>
+                                            </div>
+                                            <ul>
+                                                <li><a style="border-bottom: none;" href="Default.aspx" class="default" title="">Home</a>  </li>
+                                             <li><a href="javascript:" title="Ocean Health Pariwar" class="about">About Us</a>
+                                                            <ul>
+                                                                <li><a href="About_Company.aspx#health" class="about" title="Ocean Health Pariwar">About Company</a></li>
+                                                                <li><a href="Mission_Vision.aspx#health" class="about" title="Ocean Health Pariwar">Mission & Vision </a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li><a href="javascript:" class="product" title="Ocean Health Pariwar">Product</a> 
+                                                             <ul>
+                                                                <li><a href="product.aspx#health" class="about" title="Ocean Health Pariwar">Binary Product</a></li>
+                                                                <li><a href="Repurchase_product.aspx#health" class="about" title="Ocean Health Pariwar">Repurchase Product</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="Business-plan.aspx#health" class="plan" title="Ocean Health Pariwar">Business Plan</a> </li>
+
+                                                        <li><a href="Reward.aspx#health" class="rew" title="Ocean Health Pariwar">Rewards</a> </li>
+                                                        <li><a href="Legal.aspx#health" class="product" title="Ocean Health Pariwar">Legal</a> </li>
+                                                        <li><a href="javascript:" class="gall" title="Ocean Health Pariwar">Gallery</a>
+                                                            <ul>
+                                                                <li><a href="javascript:" class="gall" title="Ocean Health Pariwar">Image Gallery</a></li>
+                                                                <li><a href="javascript:" class="gall" title="Ocean Health Pariwar">Video Gallery</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="contact_us.aspx#health" class="contact" title="Ocean Health Pariwar">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="ocean" id="health">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+
+        <section>
+            <div class="main-footer-top">
+                <div class="container">
+                    <div class="main-footer-top-iner">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="about-footer-sec">
+                                    <h2 class="about-footer-sec-h2">Contact Details</h2>
+                                    <div class="address-footer">
+                                        <p class="company-add-p">
+                                            <b style="color: #00b3ff; font-size: 14px">Welcome To Ocean Health Pariwar</b>
+                                            <br />
+                                          
+                                            We, (Ocean Health Pariwar) are one of the best A Company in India. The Company is also  <a href="About_Company.aspx#health" title=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                        </p>
+                                        <a class="mobile-buttom fut-email" href="mailto:companyname.com">info@oceanhealthpariwar.com</a>
+                                        <a class="mobile-buttom fut-contact" href="tell:+91-8797195789">+91-8797195789</a>
+                                        <p class="mobile-buttom">Shop No. 10, Adarsh Colony, OPP Lauwala Gurdwara, Sanoli Road Panipat (Haryana)</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                <div class="about-footer-sec">
+                                    <h2 class="about-footer-sec-h2">Quick Link</h2>
+                                    <ul class="information-ul">
+                                        <li class="information-li"><a class="information-a" href="About_Company.aspx#health" title="Ocean Health Pariwar">About Us</a></li>
+                                        <li class="information-li"><a class="information-a" href="Mission_Vision.aspx#health" title="Ocean Health Pariwar">Mission & Vision</a></li>
+                                        <li class="information-li"><a class="information-a" href="product.aspx#health" title="Ocean Health Pariwar">Products</a></li>
+                                        <li class="information-li"><a class="information-a" href="Business-plan.aspx#health" title="Ocean Health Pariwar">Business Plan</a></li>
+                                        <li class="information-li"><a class="information-a" href="Reward.aspx#health" title="Ocean Health Pariwar">Rewards</a></li>
+                                        <li class="information-li"><a class="information-a" href="javascript:" title="Ocean Health Pariwar">Gallery</a></li>
+                                        <%--<li class="information-li"><a class="information-a" href="RegistrationForm.aspx#Regis" title="Ocean Health Pariwar">Join Now</a></li>--%>
+                                        <li class="information-li"><a class="information-a" href="contact_us.aspx#health" title="Ocean Health Pariwar">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="about-footer-sec">
+                                    <h2 class="about-footer-sec-h2">Our Location</h2>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.5583879114133!2d77.01275671470026!3d29.383217082127622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dd080c113212b%3A0xcd46e744a06b52e0!2sSanoli+Rd%2C+Sewah+Kheri%2C+Ujra+Keri+Village%2C+Panipat+Taraf+Afghan%2C+Haryana+132103!5e0!3m2!1sen!2sin!4v1528956969452" width="100%" height="230" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="footer-down-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="footer-down-iner">
+                                <p>2018 Copyright © All Rights Reserved <span style="color: #4cff00">Ocean Health Pariwar</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%-- ..........top arrow......................... --%>
+        <div class="scroll-top-wrapper">
+            <span class="scroll-top-inner">
+                <i class="fa fa-2x fa fa-long-arrow-up" style="-ms-transform: rotate(7deg); -webkit-transform: rotate(7deg); transform: rotate(-45deg)"></i>
+            </span>
+        </div>
+
+        <script src="js/jquery.themepunch.tools.min.js"></script>
+        <script src="js/jquery.themepunch.revolution.min.js"></script>
+        <script src="js/revolution.extension.layeranimation.min.js"></script>
+        <script src="js/revolution.extension.navigation.min.js"></script>
+        <script src="js/revolution.extension.parallax.min.js"></script>
+        <script src="js/revolution.extension.slideanims.min.js"></script>
+        <script src="js/simplyCountdown.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/smoothscroll.js"></script>
+
+        <script>$(function () { $(document).on("scroll", function () { if ($(window).scrollTop() > 100) { $(".scroll-top-wrapper").addClass("show") } else { $(".scroll-top-wrapper").removeClass("show") } }); $(".scroll-top-wrapper").on("click", scrollToTop) }); function scrollToTop() { verticalOffset = typeof (verticalOffset) != "undefined" ? verticalOffset : 0; element = $("body"); offset = element.offset(); offsetTop = offset.top; $("html, body").animate({ scrollTop: offsetTop }, 500, "linear") }</script>
+
+
+
+
+        <div class="modal fade" id="myModal" role="dialog" style="z-index: 10000;">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style="position: relative">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+                        <h3 class="modal-title">Login</h3>
+                    </div>
+                    <div class="modal-body">
+                        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                            <ContentTemplate>
+                                <div class="form-group">
+                                    <span>Enter User Id</span>
+                                    <asp:TextBox ID="txt_username" runat="server" placeholder="Enter User Id" CssClass="form-control" Style="height: auto;"></asp:TextBox>
+                                </div>
+                                <div class="form-group">
+                                    <span>Enter Password</span>
+                                    <asp:TextBox ID="txt_password" TextMode="Password" runat="server" placeholder="Enter Password" CssClass="form-control" Style="height: auto;"></asp:TextBox>
+                                </div>
+                                <div class="form-group">
+                                    <asp:Label ID="lbl_message" runat="server" ForeColor="Red"></asp:Label>
+                                    <asp:Button ID="btn_sign_in" runat="server" Text="SIGN IN" CssClass="btn btn-blue" Style="background: #73BD15; color: #fff; padding: 6px 25px;" CausesValidation="false" OnClick="btn_sign_in_Click" />
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                    <div class="modal-footer" style="padding: 0px;">
+                        <div class="form-group aligncenter" style="display: none;">
+                            <div class="row">
+                                <div class="col-sm-6  col-xs-12">
+                                    <a href="Forgot_password.aspx" style="background-color: white; color: blue; text-decoration: underline;">Forgot Password</a>
+                                </div>
+                                <div class="col-sm-6  col-xs-12">
+                                </div>
+                            </div>
+
+                        </div>
+                        <asp:UpdateProgress ID="UpdateProgress2" runat="server" AssociatedUpdatePanelID="UpdatePanel2"
+                            DynamicLayout="False">
+                            <ProgressTemplate>
+                                <div class="waiting" style="text-align: center;">
+                                    <img src="Content/images/please_wait_small.gif" class="img-responsive" style="height: 38px; width: 38px; margin: 0 auto;" />
+                                </div>
+
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>

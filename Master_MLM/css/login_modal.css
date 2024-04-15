@@ -1,0 +1,151 @@
+﻿.modal-body {
+    background: #efefef;
+    height:auto;
+    width:100%;
+    float:left
+}
+
+.modal-header {
+    padding: 15px 15px 12px 15px;
+    /*border-bottom: 1px solid #2190d7;*/
+     background: #73BD15;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+}
+
+.modal a {
+        color: #fff;
+    background: #0070c0;
+    padding: 0px 5px 2px 5px;
+}
+
+.main11 {
+    margin: 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    float: left;
+    height: auto;
+}
+
+.login-para {
+    border-bottom: 2px solid #3a3561!important;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 5px;
+    height: auto;
+    background: #221a61!important;
+    line-height: 35px;
+    font-size: 16px;
+    color: White;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-table {
+    width: 100%;
+    height: auto;
+    border-spacing: 0px;
+    font-family: Ebrima;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-size: 13px;
+}
+
+    .login-table td {
+        color: #797777;
+        font-size: 16px;
+    }
+
+    .login-table .btn {
+        margin-top: 10px;
+        -webkit-border-radius: 0 0 0 0;
+        border-radius: 0 0 0 0;
+    }
+
+
+.btn-danger {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+}
+
+.btn-primary {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+}
+
+.waiting {
+    padding: 25px 15px 15px 14px;
+    font-size: 16px;
+    bottom: 0px;
+    left: 1px;
+    top: 221px;
+    background: #fff;
+    color: #1a1313;
+    height: 122px!important;
+    z-index: 1000;
+    font-size: 17px;
+    text-align: center;
+    width: 99.8%;
+    position: absolute;
+}
+
+.divider {
+    margin: 10px 0px 0px 0px;
+    height: 4px;
+    width: 100%;
+    float: left;
+}
+
+.reg-para {
+    margin: 0px;
+    padding: 5px 10px;
+    height: auto;
+    background: rgb(69, 12, 13);
+    vertical-align: top;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.09);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.09);
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: White;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #2A4147;
+}
+.form-group {
+    height:auto;
+    width:100%;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    float:left
+}
+
+    .form-group p {
+          height:auto;
+    width:100%;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 10px 0px;
+    float:left
+    font
+
+    }
+
+.form-control {
+      display: block;
+    width: 100%;
+    height: auto;
+    padding: 8px 0px 8px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

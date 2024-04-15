@@ -1,0 +1,1219 @@
+﻿body, #form1 {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    color: #333;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    background-color: rgb(202, 232, 245)!important;
+}
+
+/*................header..................*/
+section {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+header {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: #EDF1F4;
+}
+
+.logi_ul {
+    margin: 0%;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: right;
+}
+
+    .logi_ul li {
+        margin: 0%;
+        padding: 0px;
+        height: auto;
+        width: auto;
+        float: right;
+        list-style-type: none;
+        display: block;
+    }
+
+        .logi_ul li a {
+            margin: 5px 5px 5px 5px;
+            padding: 6px 12px 6px 12px;
+            height: auto;
+            width: auto;
+            float: right;
+            list-style-type: none;
+            display: block;
+            border-radius: 4px;
+            border: 0px solid #f19605;
+            background: linear-gradient(to bottom, #ffb43b, #f19605);
+            text-shadow: #591717 1px 1px 1px;
+            font: normal normal bold 11px arial;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+            .logi_ul li a:hover {
+                background: linear-gradient(to bottom, #ffd847, #ffb406);
+                color: #ffffff;
+                text-decoration: none;
+                border: 0px solid #ffad06;
+            }
+
+.top {
+    margin: 0%;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+}
+
+.top_link {
+    margin: 0%;
+    padding: 3% 0% 0px 0px;
+    height: auto;
+    width: auto;
+    float: right;
+}
+
+    .top_link li {
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+        width: auto;
+        float: left;
+        list-style-type: none;
+        display: block;
+    }
+
+        .top_link li a {
+            margin: 0%;
+            padding: 0% 10% 0% 10%;
+            height: auto;
+            width: auto;
+            float: left;
+            font-family: 'Geneva', Tahoma, sans-serif;
+            color: #002B5E;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+.header_donate_btn {
+    float: right;
+    width: auto;
+    border: 0px solid white;
+    color: white;
+    height: 32px;
+    margin-right: 10px;
+    padding-bottom: 8px;
+}
+
+    .header_donate_btn a {
+        background-color: #ACDB05;
+        color: #00A8B2;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+.button-small {
+    -webkit-border-radius: 0 20px 20px 20px;
+    height: auto;
+    width: auto;
+    padding: 8px;
+    display: inline-block;
+    text-shadow: none;
+}
+/*................ end header..................*/
+
+/*...............menu....................*/
+nav {
+    margin: 2px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    width: 100%;
+    float: right;
+}
+
+.nav_inner {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+/*...............end menu....................*/
+/*...............slider section....................*/
+
+
+.slider_section {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+
+
+.slider_buttom {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    float: left;
+    z-index: 99;
+    /*top: 400px;*/
+}
+
+.slider_buttominner {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-repeat: repeat-y;
+    background-position: left top;
+}
+
+
+.slider_3box {
+    margin: 0px;
+    padding: 10px 0px 25px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.slider_3boxtext {
+    margin: 10px 0px;
+    padding: 0px 10px 10px 10px;
+    height: auto;
+    float: left;
+    width: auto;
+    font-family: tahoma;
+    font-size: 25px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+@media only screen and (min-width:320px) {
+
+
+    .slider_buttom {
+        top: 400px;
+    }
+
+    .prodict_slider {
+        margin: 40px 0px 10px 0px;
+    }
+
+    .member_login {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+    .slider_buttom {
+        top: 500px;
+    }
+
+    .prodict_slider {
+        margin: 60px 0px 10px 0px;
+    }
+
+    .member_login {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .slider_buttom {
+        height: 209px;
+        top: 560px;
+    }
+
+    .prodict_slider {
+        margin: 70px 0px 10px 0px;
+    }
+
+    .member_login {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+
+    .slider_buttom {
+        height: 209px;
+        top: 430px;
+    }
+
+    .prodict_slider {
+        margin: 80px 0px 10px 0px;
+    }
+
+    .member_login {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+
+
+
+    .slider_buttom {
+        height: 209px;
+        top: 520px;
+    }
+
+    .header_main {
+        min-height: 598px;
+    }
+
+    .prodict_slider {
+        margin: 80px 0px 10px 0px;
+    }
+
+    .member_login {
+        visibility: visible;
+    }
+}
+/*............... end slider section....................*/
+/*............... member login....................*/
+.member_login {
+    border-width: 1px;
+    margin: 0px;
+    padding: 70px 0px 70px 0px;
+    height: auto;
+    width: 100%;
+    z-index: 99;
+    top: 30px;
+    /*border-top-style: solid;
+    border-top-color: #0099CC;*/
+    /*background-color: rgba(128, 231, 255, 0.48);*/
+    /*background-color: rgb(88, 241, 25);*/
+}
+
+.member_logininner {
+    margin: 0px auto;
+    padding: 10px;
+    height: 290px;
+    width: 100%;
+    background: rgba(0, 148, 253, 0.49);
+    border-radius: 4px;
+}
+
+.member_loginbox {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: rgb(235, 235, 235);
+    border-radius: 3px;
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.member_head {
+    margin: 0px;
+    padding: 10px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: #f39a0d;
+    border-bottom: 1px solid #cfcfcf;
+    color: #fff;
+    font-family: tahoma;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.member_line {
+    margin: 11px 0px 0px 0px;
+    padding: 10px 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.text_boxdesign {
+    margin: 0px;
+    padding: 0 10px;
+    width: 100%;
+    height: 34px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+
+.member_loginbutton {
+    margin: 0px 10px 0px 0px;
+    height: auto;
+    width: 100%;
+    float: right;
+    padding: 5px 20px;
+    height: auto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #527881;
+    text-shadow: 0 1px #e3f1f1;
+    background: #cde5ef;
+    border: 1px solid;
+    border-color: #b4ccce #b3c0c8 #9eb9c2;
+    border-radius: 16px;
+    width: 80px;
+    background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);
+    box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+/*............... end member login....................*/
+
+/*............... our_product scrollslider....................*/
+.mid1 {
+    background-position: left top;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-image: url('../images/mid1bg.png');
+    background-repeat: repeat;
+}
+
+.prodict_slider {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: #fff;
+    border: solid 1px #CCCCCC;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+/*............... end our_product scrollslider....................*/
+
+
+
+
+
+/*...............  Home page welcome section....................*/
+.welcome_section {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ebedee;
+}
+
+.welcome_head {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ebedee;
+}
+
+.welcome_headtxt {
+    margin: 0px;
+    padding: 15px 0px 0px 10px;
+    height: auto;
+    width: auto;
+    float: left;
+    text-shadow: #cacaca 1px 1px 0px;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    color: #4e4e4e;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.welcome_para {
+    margin: 0px;
+    padding: 10px 0px 30px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    font-family: tahoma;
+    font-size: 15px;
+    line-height: 28px;
+    color: #333;
+    text-align: justify;
+}
+
+
+
+
+
+.mid2 {
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #ebedee;
+}
+
+.reward_box {
+    margin: 20px 0px 0px 0px;
+    padding: 15px;
+    min-height: 250px;
+    width: 100%;
+    float: left;
+    background: none repeat scroll 0 0 #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #ccc;
+    color: #fff;
+    float: left;
+}
+
+.reward_boxhead {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.reward_headtext {
+    padding: 5px 0px 0px 0px;
+    color: #fff;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    text-shadow: 2px 2px 2px #545353;
+    font-size: 20px;
+    font-weight: bold;
+    width: auto;
+    margin: 0px auto 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .reward_headtext:hover {
+        color: #fff;
+        text-decoration: none;
+        text-decoration: none;
+    }
+
+
+
+.news_box {
+    margin: 0px;
+    padding: 0px;
+    height: 190px;
+    width: 100%;
+    float: left;
+}
+
+.news_ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    height: 180px;
+    width: 100%;
+    float: left;
+}
+
+    .news_ul li {
+        margin: 0px;
+        padding: 10px 0px 10px 10px;
+        height: auto;
+        width: 100%;
+        list-style-type: none;
+        text-align: left;
+        color: #000;
+    }
+
+.nws_arrow {
+    background-image: url('../images/icons/new_icon.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 10px 0px 10px 40px;
+    margin-left: 0px;
+    font-weight: bold;
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: tahoma;
+    width: 100%;
+    color: #fff;
+}
+
+    .nws_arrow:hover {
+        transition: 0.35s;
+        color: #9ce1fd;
+    }
+/*...............  End Home page welcome section....................*/
+
+
+
+
+
+
+/*.................. footer section....................*/
+footer {
+    margin: 0px;
+    padding: 10px 0 10px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: #1d5a96;
+}
+
+
+/*.................. end footersection....................*/
+
+
+/*.................Business Plan.................*/
+.Business_Plan {
+    margin: 15px 0px 7px 0px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.Business_Planinner {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: rgba(247, 247, 247, 1);
+    border-radius: 3px;
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Business_Planhead {
+    margin: 0px 0px 15px 0px;
+    padding: 8px 15px;
+    height: auto;
+    width: 100%;
+    float: left;
+    color: #fff;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    text-shadow: 1px 1px 1px #545353;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #f39a0d;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.Business_Planpara {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f39a0d;
+}
+
+.Business_Plan_ul {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+    .Business_Plan_ul li {
+        margin: 0px;
+        padding: 10px 0px;
+        height: auto;
+        width: auto;
+        float: left;
+        font-family: 'Terminal Dosis', Arial, sans-serif;
+        font-size: 16px;
+        color: #4e4e4e;
+        list-style-type: none;
+        font-weight: bold;
+    }
+
+.Business_Plantable {
+    margin: 10px auto;
+    padding: 0px 0px;
+    height: auto;
+    width: 80px;
+}
+
+    .Business_Plantable td {
+        font-family: 'Terminal Dosis', Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid #f39a0d;
+    }
+
+    .Business_Plantable tr:hover {
+        color: #fff;
+        background-color: #76BB13;
+        font-weight: bold;
+        box-shadow: 2px 2px 2px #ccc;
+        border: 1px solid #f39a0d;
+        transition: all 300ms linear;
+    }
+
+/*.................end Business Plan.................*/
+/*.................reward pagr.................*/
+.award_box {
+    margin: 20px 0px 0px 0px;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.award_boxinner {
+    margin: 0px;
+    padding: 0px 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: none repeat scroll 0 0 #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.award_boxhead {
+    margin: 0px;
+    padding: 8px 0px 8px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    text-shadow: 2px 2px 2px #545353;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*................. End reward pagr.................*/
+
+/*.................product pagr.................*/
+.product_box {
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+}
+
+.product_boxinner {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    /*background: rgba(247, 247, 247, 1);*/
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.product_boxhead {
+    margin: 0px 0px 18px 0px;
+    padding: 5px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: #f39a0d;
+    border-bottom: 1px solid #cfcfcf;
+    color: #fff;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px 4px 0px 0px;
+}
+/*................. end product pagr.................*/
+/*..................  footerinfo....................*/
+
+.footer_info {
+    padding: 0px 0;
+    height: auto;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+
+
+.footer_nav {
+    margin: 6px 0px 6px 0px;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    float: left;
+}
+
+    .footer_nav li {
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        width: auto;
+        list-style-type: none;
+        display: block;
+        float: left;
+        line-height: 26px;
+    }
+
+        .footer_nav li a {
+            margin: 0px;
+            padding: 1px 24px 1px 24px;
+            width: auto;
+            font-family: tahoma;
+            color: #fff;
+            font-size: 15px;
+            border-right: 1px solid #00B7C2;
+            line-height: 15px;
+        }
+
+            .footer_nav li a:hover {
+                color: #CCC;
+            }
+/*.................. End footerinfo....................*/
+
+/*..................  footerinfo2....................*/
+.footer_info2 {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.copyright_p {
+    width: 100%;
+    margin: 10px 0 5px 0;
+    padding: 0px;
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    font-family: tahoma;
+}
+
+.designer_link {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    color: #fff;
+    font-family: tahoma;
+    font-size: 15px;
+}
+
+
+
+@media only screen and (min-width:320px) {
+    .designer_link {
+        text-align: left;
+    }
+
+    .copyright_p {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .designer_link {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .designer_link {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .designer_link {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .designer_link {
+        text-align: right;
+    }
+}
+/*..................  End footerinfo2....................*/
+.testimonials {
+    margin: 0;
+    padding: 0;
+}
+
+    .testimonials div.testi_item {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+        margin: 0 0 2em;
+        overflow: hidden;
+        padding: 0;
+    }
+
+        .testimonials div.testi_item blockquote {
+            background: none repeat scroll 0 0 padding-box #dbdbdb;
+            border-radius: 10px;
+            display: block;
+            margin: 0;
+            padding: 30px;
+            position: relative;
+        }
+
+            .testimonials div.testi_item blockquote:before {
+                border-left: 20px solid transparent;
+                border-right: 0 solid transparent;
+                border-top: 20px solid #dbdbdb;
+                bottom: -20px;
+                content: "";
+                display: block;
+                height: 0;
+                left: 65px;
+                position: absolute;
+                width: 0;
+            }
+
+            .testimonials div.testi_item blockquote:after {
+                background: url("images/quotes.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+                content: "";
+                display: block;
+                height: 38px;
+                left: 20px;
+                position: absolute;
+                top: 10px;
+                width: 41px;
+            }
+
+            .testimonials div.testi_item blockquote a {
+                color: #4e4e4e;
+                display: block;
+                font-style: normal;
+                position: relative;
+                text-decoration: none;
+            }
+
+                .testimonials div.testi_item blockquote a:hover {
+                    color: #ffffff;
+                }
+
+        .testimonials div.testi_item .featured-thumbnail {
+            margin: 0 20px 0 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+.name-testi {
+    display: block;
+    padding: 12px 0 0;
+    text-align: center;
+}
+
+    .name-testi a {
+        font-weight: normal;
+    }
+
+.testimonials .thumb {
+    float: left;
+    margin-right: 20px;
+}
+
+#testi-cycle .testi_item {
+    display: none;
+}
+
+#testi-controls {
+    overflow: hidden;
+    text-align: center;
+}
+
+    #testi-controls ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #testi-controls ul li {
+            display: inline-block;
+            margin: 0 2px 0 0;
+            padding: 0;
+        }
+
+        * + html #testi-controls ul li {
+            display: inline;
+        }
+
+.flickrImages {
+    overflow: hidden;
+    position: relative;
+}
+
+    .flickrImages a {
+        background: none repeat scroll 0 0 #000;
+        display: block;
+        float: left;
+        height: 75px;
+        margin: 0 1px 1px 0;
+        width: 75px;
+    }
+
+        .flickrImages a img {
+            transition: all 0.2s ease 0s;
+        }
+
+        .flickrImages a:hover img {
+            opacity: 0.5;
+        }
+
+        .flickrImages a.link {
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+            display: inline;
+            float: none;
+            height: auto;
+            margin: 0;
+            width: auto;
+        }
+
+.banners-holder {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .banners-holder li {
+        float: left;
+        list-style-type: none;
+        margin: 0 3px 3px 0;
+        padding: 0;
+    }
+
+        .banners-holder li img {
+            float: left;
+            vertical-align: top;
+        }
+
+.vcard {
+}
+
+article.testimonial {
+    background: url("images/quotes.png") no-repeat scroll 170px 20px rgba(0, 0, 0, 0);
+    border: 1px solid #595248;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 35px;
+    padding: 30px 30px 30px 235px;
+    width: auto;
+}
+
+    article.testimonial .featured-thumbnail {
+        left: 20px;
+        position: absolute;
+        top: 20px;
+    }
+
+    article.testimonial .name-testi {
+        color: #a09c94;
+        display: block;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        line-height: 1.2em;
+        text-align: right;
+    }
+
+        article.testimonial .name-testi a {
+            text-decoration: none;
+        }
+
+            article.testimonial .name-testi a:hover {
+                text-decoration: underline;
+            }
+
+.recent-posts .format-image {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.recent-posts .format-quote {
+}
+
+.recent-posts .format-link {
+}
+
+.recent-posts .format-link {
+}
+
+.recent-posts .format-audio {
+    margin-bottom: 2em;
+}
+
+    .recent-posts .format-audio .audio-wrapper {
+        margin-bottom: 0.5em;
+    }
+
+.recent-posts .format-video {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 300px;
+}
+
+    .recent-posts .format-video iframe {
+        height: 200px;
+        width: 300px;
+    }
+
+.popular_posts {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .popular_posts li {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0 0 20px;
+    }
+
+.tags-cloud a, .tagcloud a, .post-footer a {
+    background: none repeat scroll 0 0 #e6e6e6;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    color: #333;
+    display: inline-block;
+    font-size: 11px !important;
+    line-height: 1.5em;
+    margin: 0 1px 4px 0;
+    padding: 2px 7px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+    .tags-cloud a:hover, .tagcloud a:hover, .post-footer a:hover {
+        background: none repeat scroll 0 0 #000;
+        color: #fff;
+    }
+
+.box {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.box_back {
+    width: 100%;
+    height: auto;
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+/*...............Business Plane.................*/
+.Business_Plane {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+.BusinessPlane_blok {
+    margin: 0px 0px 0px 0px;
+    padding: 3px;
+    height: auto;
+    width: 95%;
+    float: left;
+    background: none repeat scroll 0 0 #f0f0f0;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #f9f9f9;
+}
+
+.BusinessPlane_inner {
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: #fff;
+}
+
+.Business_head {
+    margin: 0px 0px 3px 0px;
+    background-color: #ed581e;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.Business_headtxt {
+    margin: 0px 0px 0px 0px;
+    background-color: #ed581e;
+    padding: 10px 0px 10px 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+    color: #fff;
+    font: bold 20px/20px 'Raleway', sans-serif;
+    border-radius: 5px 5px 0px 0px;
+    border: double 2px #ed581e;
+}
+
+.Business_ul {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+    .Business_ul li {
+        background-position: left 8px;
+        margin: 0px;
+        padding: 10px 0px 10px 40px;
+        height: auto;
+        width: 100%;
+        float: left;
+        font: 16px/16px sans-serif;
+        background-image: url('../images/heand.png');
+        background-repeat: no-repeat;
+        list-style-type: none;
+    }
+/*...............Business Plane.................*/

@@ -1,0 +1,194 @@
+
+
+/*-- gallery --*/
+.gallery {
+    background: rgba(248, 213, 1, 0.15);
+}
+
+
+/*-------------hover------------*/
+.hovereffect {
+  width: 100%;
+  height: 235px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 55%;
+  height: 81%;
+  left: 22%;
+  top: 10%;
+  border-radius: 80%;
+  border: 2px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(50%,50%,0);
+  transform: translate3d(50%,50%,0);
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(1.4);
+  -webkit-filter: brightness(1.4);
+}
+
+
+    
+/*-- //gallery --*/
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Tinos', serif;
+    . font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+[class^='imghvr-'] .agile-figcaption h4 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+/*-- responsive-design --*/
+@media (max-width:1440px) {
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 6em 1em;
+    }
+}
+
+
+@media (max-width:1280px) {
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 6em 1em;
+    }
+}
+
+@media (max-width:1080px) {
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 2.8em 2em;
+    }
+}
+
+@media (max-width:1024px) {
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 2.5em 1em;
+    }
+}
+
+
+
+@media (max-width:800px) {
+
+
+    [class^='imghvr-'] .agile-figcaption h4 {
+        font-size: 18px;
+    }
+
+    .w3gallery-grids {
+        padding: 0px 5px 0px 5px;
+        margin: 5px 0px 1px 0px;
+        height: auto;
+        float: left;
+    }
+
+    [class^='imghvr-'] .agile-figcaption p {
+        font-size: .9em;
+    }
+
+    [class^='imghvr-'] > img, [class*=' imghvr-'] > img {
+        min-height: 115px;
+        max-height: 115px;
+        width: 100%;
+    }
+
+    [class^='imghvr-'], [class*=' imghvr-'] {
+        max-height: 115px;
+        min-height: 115px;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 0.5em 1em;
+    }
+}
+
+
+@media (max-width:736px) {
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 5.5em 3em;
+    }
+}
+
+@media (max-width:600px) {
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 4em 3em;
+    }
+}
+
+@media (max-width:568px) {
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 3.5em 3em;
+    }
+}
+
+@media (max-width:480px) {
+
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 2.5em 2em;
+    }
+}
+
+@media (max-width:414px) {
+
+    [class^='imghvr-'] .agile-figcaption p {
+        font-size: .85em;
+    }
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 2em 0.5em;
+    }
+}
+
+@media (max-width:384px) {
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 1.8em 0.5em;
+    }
+}
+
+@media (max-width:320px) {
+
+
+    [class^='imghvr-'] .agile-figcaption, [class*=' imghvr-'] .agile-figcaption {
+        padding: 4em 3em;
+    }
+}

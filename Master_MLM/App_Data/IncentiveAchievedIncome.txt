@@ -1,0 +1,9 @@
+﻿Create Table dbo.[IncentiveAchievedIncome] ( [ID] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[MemberCode] varchar (500)  NULL ,
+[Amount] float  NULL ,
+[Month] varchar (500)  NULL ,
+[Year] varchar (500)  NULL ,
+[AchievedDate] varchar (500)  NULL ,
+[PaidDate] varchar (500)  NULL ,
+[PaidStatus] varchar (500)  NULL   );
+

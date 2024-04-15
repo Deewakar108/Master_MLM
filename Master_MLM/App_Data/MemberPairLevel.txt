@@ -1,0 +1,9 @@
+﻿Create Table dbo.[MemberPairLevel] ( [ID] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[MemberCode] varchar (500)  NULL ,
+[PairAchieved] int  NULL ,
+[IsUsed] int  DEFAULT ('0') NULL ,
+[AchievedDate] varchar (500)  NULL ,
+[AutoInsertDateTime] datetime  DEFAULT (getdate()) NULL ,
+[ClosingNumber] varchar (500)  DEFAULT ((0)) NULL ,
+[Interval] varchar (500)  NULL   );
+

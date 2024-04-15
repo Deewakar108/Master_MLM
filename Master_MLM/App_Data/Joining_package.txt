@@ -1,0 +1,22 @@
+﻿Create Table dbo.[Joining_package] ( [ID] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[Package_name] varchar (5000)  NULL ,
+[Package_id] varchar (5000)  NULL ,
+[BV] varchar (500)  NULL ,
+[Package_amount] varchar (5000)  NULL ,
+[Position] int  NULL ,
+[Imagepathbig] varchar (500)  NULL ,
+[Imagepathtny] varchar (500)  NULL ,
+[Description] nvarchar (MAX)  NULL ,
+[Date] varchar (500)  NULL ,
+[Idate] int  NULL ,
+[Capping] varchar (500)  NULL ,
+[franchaise_commission] varchar (500)  NULL ,
+[Value] int  DEFAULT ((0)) NULL ,
+[MatchingIncome] int  DEFAULT ((0)) NULL ,
+[RewardPoint] float  DEFAULT ((0)) NULL ,
+[IsActivationPackage] int  DEFAULT ((0)) NULL ,
+[RepurchaseBV] varchar (500)  NULL   );
+
+SET IDENTITY_INSERT dbo.[Joining_package] ON
+Insert Into dbo.[Joining_package] ([ID] ,[Package_name] ,[Package_id] ,[BV] ,[Package_amount] ,[Position] ,[Imagepathbig] ,[Imagepathtny] ,[Description] ,[Date] ,[Idate] ,[Capping] ,[franchaise_commission] ,[Value] ,[MatchingIncome] ,[RewardPoint] ,[IsActivationPackage] ,[RepurchaseBV] ) values (N'19',N'GOLD',N'63',N'0.00',N'2500',NULL,NULL,NULL,N'OCEAN',N'19/06/2018',N'20180619',N'0',NULL,NULL,N'0',N'0',N'0',N'0');Insert Into dbo.[Joining_package] ([ID] ,[Package_name] ,[Package_id] ,[BV] ,[Package_amount] ,[Position] ,[Imagepathbig] ,[Imagepathtny] ,[Description] ,[Date] ,[Idate] ,[Capping] ,[franchaise_commission] ,[Value] ,[MatchingIncome] ,[RewardPoint] ,[IsActivationPackage] ,[RepurchaseBV] ) values (N'20',N'SILVER',N'64',N'0.00',N'1500',NULL,NULL,NULL,N'OCEAN',N'22/06/2018',N'20180622',N'0',NULL,NULL,N'0',N'0',N'0',N'0');SET IDENTITY_INSERT dbo.[Joining_package] OFF
+

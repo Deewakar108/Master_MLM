@@ -1,0 +1,52 @@
+<link href="css/simplelightbox.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+
+
+
+
+
+                                <div class="hom-img-glry-sec">
+                                <div class="agileinfo-gallery-row">
+                                    <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+                                        <a href="images/logo/ints-logo.jpg" class="imghvr-hinge-right ">
+                                            <img src="images/logo/ints-logo.jpg" alt="Integer Foundation" />
+                                            <div class="agile-figcaption">
+                                                <h4>Integer Foundation</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+                                        <a href="images/logo/akvt-logo.jpg" class="imghvr-hinge-right figure">
+                                            <img src="images/logo/akvt-logo.jpg" alt="Integer Foundation" />
+                                            <div class="agile-figcaption">
+                                                <h4>Integer Foundation</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+                                        <a href="images/logo/wits-india-logo.jpg" class="imghvr-hinge-right figure">
+                                            <img src="images/logo/wits-india-logo.jpg" alt="Integer Foundation" />
+                                            <div class="agile-figcaption">
+                                                <h4>Integer Foundation</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+                                        <a href="images/logo/Bea-logo.jpg" class="imghvr-hinge-right figure">
+                                            <img src="images/logo/Bea-logo.jpg" alt="Integer Foundation" />
+                                            <div class="agile-figcaption">
+                                                <h4>Integer Foundation</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <script src="js/simple-lightbox.min.js"></script>
+                                    <script>
+                                        $(function () {
+                                            var gallery = $('.agileinfo-gallery-row a').simpleLightbox({ navText: ['&lsaquo;', '&rsaquo;'] });
+                                        });
+                                    </script>
+                                </div>
+                            </div>

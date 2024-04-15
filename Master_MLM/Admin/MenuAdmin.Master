@@ -1,0 +1,300 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuAdmin.Master.cs" Inherits="Master_MLM.Admin.MenuAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/bootstrap.min.css") %>" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/bootstrap-responsive.min.css") %>" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/uniform.css") %>" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/select2.css") %>" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/fullcalendar.css") %>" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/matrix-style.css") %>" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/matrix-media.css") %>" />
+    <link href="<%# ResolveClientUrl("font-awesome/css/font-awesome.css") %>" rel="stylesheet" />
+    <link rel="stylesheet" href="<%# ResolveClientUrl("css/jquery.gritter.css") %>" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css' />
+    <script src="<%# ResolveClientUrl("js/excanvas.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.min.js") %>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        .widget-title span.icon-right {
+            padding: 9px 10px 15px 11px;
+            float: right;
+            border-left: 1px solid #dadada;
+            cursor: pointer;
+        }
+
+        .grid-icon {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .minimum-height {
+            min-height: 517px;
+        }
+
+        #sidebar > ul {
+            margin: 38px 0 0 !important;
+        }
+    </style>
+    <%--<script src="js/jquery.session.js"></script>--%>
+    <script>
+
+        //$(document).ready(function () {
+        //    //LoadMenuStatus();
+        //    $("#sidebar ul li").click(function () {
+        //        $.session.set("sksMenu", this.id);
+        //        alert($.session.get('sksMenu'));
+        //        //$("#navbar li").removeClass("sks-active");
+        //        //$(this).addClass("sks-active");
+        //        //return false;
+        //    });
+        //});
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <div id="header">
+        <h1><a href="dashboard.html">SINGH MLM</a></h1>
+    </div>
+
+    <div id="user-nav" class="navbar navbar-inverse">
+        <ul class="nav">
+            <li class="dropdown" id="profile-messages">
+                <a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
+                    <i class="icon icon-user"></i>&nbsp;&nbsp;<span class="text" style="color: #fff;">Welcome
+                        <asp:Label ID="lblAdmin" runat="server" Text="Label"></asp:Label></span><%--&nbsp;<b class="caret"></b>--%></a>
+                <%--<ul class="dropdown-menu">
+                    <li><a href="#"><i class="icon-user"></i>My Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-check"></i>My Tasks</a></li>
+                    <li class="divider"></li>
+                    <li><a href="~/Admin/logout.aspx" runat="server"><i class="icon-key"></i>Log Out</a></li>
+                </ul>--%>
+            </li>
+            <li class="dropdown" id="menu-messages">
+                <a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+                    <i class="icon icon-envelope"></i>&nbsp;&nbsp;
+                    <span class="text">Messages</span>
+                    <span class="label label-important">0</span>&nbsp;
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="sAdd" title="" href="~/Admin/Message/Compose_message.aspx" runat="server"><i class="icon-plus"></i>Send Message</a></li>
+                    <li class="divider"></li>
+                    <li><a class="sInbox" title="" href="~/Admin/Message/Received_message.aspx" runat="server"><i class="icon-envelope"></i>Inbox</a></li>
+                    <li class="divider"></li>
+                    <li><a class="sOutbox" title="" href="~/Admin/Message/Send_message.aspx" runat="server"><i class="icon-arrow-up"></i>Outbox</a></li>
+                    <%--<li class="divider"></li>
+                    <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i>trash</a></li>--%>
+                </ul>
+            </li>
+            <li class=""><a title="" href="#"><i class="icon icon-cog"></i><span class="text">Settings</span></a></li>
+            <li class=""><a title="" href="~/Admin/logout.aspx" runat="server"><i class="icon icon-share-alt"></i><span class="text">Logout</span></a></li>
+        </ul>
+    </div>
+
+
+    <form id="form1" runat="server">
+        <!--sidebar-menu-->
+
+        <asp:Menu ID="sidebar" runat="server">
+            <Items>
+                <asp:MenuItem Text="Home"></asp:MenuItem>
+                <asp:MenuItem Text="About Us"></asp:MenuItem>
+            </Items>
+            <LevelMenuItemStyles>
+                <asp:MenuItemStyle CssClass="submenu" />
+                <asp:MenuItemStyle CssClass="submenu" />
+            </LevelMenuItemStyles>
+        </asp:Menu>
+
+        <!--  <div id="sidebar">
+            <a href="#" class="visible-phone"><i class="icon icon-home"></i>Dashboard</a>
+            <ul>
+                <li id="link1"><a href="~/Admin/home.aspx" runat="server"><i class="icon icon-home"></i><span>Dashboard</span></a> </li>
+
+                <li id="link2" class="submenu"><a href="#"><i class="icon icon-bullhorn"></i><span>Package</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a id="A1" href="~/Admin/Package/AddProduct.aspx" runat="server">Add Product</a></li>
+                        <li><a href="~/Admin/Package/Create_Joining_Products_Kit.aspx" runat="server">Crate Package</a></li>
+                        <li><a href="~/Admin/Package/Package_list.aspx" runat="server">Package List</a></li>
+                    </ul>
+                </li>
+                <li id="link3" class="submenu"><a href="#"><i class="icon icon-unlock"></i><span>E-Pin</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/epin/Generate-epin.aspx" runat="server">Generate E-Pin</a></li>
+                        <li><a href="~/Admin/epin/Distribute-epin.aspx" runat="server">Distribute E-Pin</a></li>
+                        <li><a href="~/Admin/epin/Delete_distributed_epin.aspx" runat="server">Delete  E-Pin</a></li>
+                        <li><a href="~/Admin/epin/E-pin-history.aspx" runat="server">E-Pin History</a></li>
+                        <li><a href="~/Admin/epin/Distribute_E-Pin_history.aspx" runat="server">Distributed E-Pin History</a></li>
+                        <li><a href="~/Admin/epin/View_epin_daily_monthly_yearly.aspx" runat="server">Date wise E-Pin History</a></li>
+                        <li><a href="~/Admin/epin/Used_pin_history.aspx" runat="server">Used E-Pin History</a></li>
+                        <li><a href="~/Admin/epin/Member_pin_transfer_report.aspx" runat="server">Member E-Pin Transfer</a></li>
+                        <li><a href="~/Admin/epin/View_request_pin_purchase.aspx" runat="server">View Requested Details</a></li>
+                        <li><a href="~/Admin/epin/Packagewise_Epin_History.aspx" runat="server">Package wise E-pin History</a></li>
+                    </ul>
+                </li>
+                <li id="link4" class="submenu"><a href="#"><i class="icon icon-user"></i><span>Member</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/Report/Total_Free_Joining.aspx" runat="server">Member Verification</a></li>
+                        <li><a href="~/Admin/Members/Edit_profile.aspx" runat="server">Edit Member Profile</a></li>
+                        <li><a href="~/Admin/Members/Bank_Info.aspx" runat="server">Edit Member Bank Account</a></li>
+                        <li><a href="~/Admin/Members/Member_Bank_Payment_History_List.aspx" runat="server">Member Bank Payment History List</a></li>
+                        <li><a href="~/Admin/Members/Reprint_welcome_letter.aspx" runat="server">Reprint Welcome Letter</a></li>
+                    </ul>
+                </li>
+                <li id="link5" class="submenu"><a href="#"><i class="icon icon-book"></i><span>Report</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/Report/Packagewise_Joininglist.aspx" runat="server">Package wise Joining </a></li>
+                        <li><a href="~/Admin/Report/Total_joining.aspx" runat="server">Total Paid  Joining </a></li>
+                        <li><a href="~/Admin/Report/Total_Free_Joining.aspx" runat="server">Total Free Joining </a></li>
+                        <%--<li><a href="~/Admin/Report/daily_monthly_yearly_verification_details.aspx" runat="server">Date wise verification</a></li>--%>
+                        <li><a href="~/Admin/Report/View-da-mo-ye-joining.aspx" runat="server">View Date wise joining</a></li>
+                        <li><a href="~/Admin/Report/Binary_team_structure.aspx" runat="server">View Tree</a></li>
+                        <li><a href="~/Admin/Report/Total_left_right_joining.aspx" runat="server">Genealogy</a></li>
+                        <li><a href="~/Admin/Report/Genealogy_bt_two_date_positionwise.aspx" runat="server">Date Wise Genealogy</a></li>
+                        <li><a href="~/Admin/Report/Verified_Genealogy_bt_two_date_positionwise.aspx" runat="server">Date Wise Verified Genealogy</a></li>
+                        <%--<li><a href="~/Admin/Report/Upgrade_Member_List.aspx" runat="server">Date Wise Upgrade Member List</a></li>--%>
+                        <li><a href="~/Admin/Report/Spill_Report.aspx" runat="server">Spill Report</a></li>
+                        <li><a href="~/Admin/Report/referralReport.aspx" runat="server">Referral Report</a></li>
+                    </ul>
+                </li>
+                <li id="link6" class="submenu"><a href="#"><i class="icon icon-refresh"></i><span>Closing</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a id="A2" href="~/Admin/Closing/ClosingForm.aspx" runat="server">Make Closing</a></li>
+                        <li><a id="A5" href="~/Admin/Closing/ClosingReport.aspx" runat="server">Closing Report</a></li>
+                    </ul>
+                </li>
+                <li id="link7" class="submenu"><a href="#"><i class="icon icon-gift"></i><span>Payout</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/Payout/Bank_payout_chart.aspx" runat="server">Bank Payout Chart</a></li>
+                        <li><a href="~/Admin/Payout/Make_payment.aspx" runat="server">Make payment</a></li>
+                        <li><a href="~/Admin/Payout/Payout_chart.aspx" runat="server">Payout Chart</a></li>
+                        <li><a href="~/Admin/Payout/Monthly_tds_report.aspx" runat="server">TDS Report</a></li>
+                        <li><a href="~/Admin/Payout/Quarterly_tds_report.aspx" runat="server">TDS Report Quarterly</a></li>
+                        <li><a href="~/Admin/Payout/Cdf_report.aspx" runat="server">CDF Report</a></li>
+                    </ul>
+                </li>
+                <li id="link8" class="submenu"><a href="#"><i class="icon icon-comment"></i><span>Message</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/Message/Compose_message.aspx" runat="server">Send Message</a></li>
+                        <li><a href="~/Admin/Message/Received_message.aspx" runat="server">Inbox</a></li>
+                        <li><a href="~/Admin/Message/Send_message.aspx" runat="server">Outbox</a></li>
+                    </ul>
+                </li>
+                <li id="link9" class="submenu"><a href="#" onclick="return plusminus('id1');"><i class="icon icon-lock"></i><span>Setting</span> <span class="label label-important" id="id1">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/Setting/Change_212ede_admin_password.aspx" runat="server">Change Own Password</a></li>
+                        <li><a href="~/Admin/Setting/Change_member_password.aspx" runat="server">Change User Password </a></li>
+                        <li><a href="~/Admin/Setting/show_member_password.aspx" runat="server">Show Member Password </a></li>
+                        <li><a href="~/Admin/Setting/Member_Notification_Send.aspx" runat="server">Send Notification Member Profile News</a></li>
+                        <li><a href="~/Admin/Setting/Member_Notification_Edit.aspx" runat="server">Edit Notification Member Profile News</a></li>
+                        <li><a href="~/Admin/Setting/add_meeting_list.aspx" runat="server">Add Training Schedule</a></li>
+                        <li><a href="~/Admin/Setting/Edit_Meeting_List.aspx" runat="server">Edit Training Schedule</a></li>
+                    </ul>
+                </li>
+                <li id="link10" class="submenu"><a href="#"><i class="icon icon-th"></i><span>Website</span> <span class="label label-important">+</span></a>
+                    <ul>
+                        <li><a href="~/Admin/Website/upload_news.aspx" runat="server">Add News</a></li>
+                        <li><a href="~/Admin/Website/edit-news.aspx" runat="server">Edit News</a></li>
+                        <li><a href="~/Admin/Website/view_enquiry_page.aspx" runat="server">View Enquiry</a></li>
+                    </ul>
+                </li>
+                <li id="link11"><a href="~/Admin/logout.aspx" runat="server"><i class="icon icon-signout"></i><span>Log Out                
+                <asp:Button ID="btnlogout" runat="server" Text="Log Out" Style="display: none;" OnClick="btnlogout_Click" /></span></a> </li>
+
+
+            </ul>
+        </div>
+     sidebar-menu-->
+
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!--Footer-part-->
+    <div class="row-fluid">
+        <div id="footer" class="span12">
+            <asp:Label ID="lblYear" runat="server" Text="Label"></asp:Label>
+            &copy; <a href="#">
+                <asp:Label ID="lblCompanyName" runat="server" Text="Label"></asp:Label></a>
+        </div>
+    </div>
+    <!--Footer-part-->
+
+
+    <script src="<%# ResolveClientUrl("js/jquery.ui.custom.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/bootstrap.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.flot.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.flot.resize.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.peity.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/fullcalendar.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.dashboard.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.gritter.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.interface.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.chat.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.validate.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.form_validation.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.wizard.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.uniform.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/select2.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.popover.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/jquery.dataTables.min.js") %>"></script>
+    <script src="<%# ResolveClientUrl("js/matrix.tables.js") %>"></script>
+
+
+
+    <script type="text/javascript">
+        // This function is called from the pop-up menus to transfer to
+        // a different page. Ignore if the value returned is a null string:
+        function goPage(newURL) {
+
+            // if url is empty, skip the menu dividers and reset the menu selection to default
+            if (newURL != "") {
+
+                // if url is "-", it is this page -- reset the menu:
+                if (newURL == "-") {
+                    resetMenu();
+                }
+                    // else, send page to designated URL            
+                else {
+                    document.location.href = newURL;
+                }
+            }
+        }
+
+        // resets the menu selection upon entry to this page:
+        function resetMenu() {
+            document.gomenu.selector.selectedIndex = 2;
+        }
+
+        function plusminus(id) {
+            if ($("#" + id).html() == '+') { $("#" + id).html("-"); }
+            else { $("#" + id).html("+"); }
+
+            return false;
+        }
+
+    </script>
+</body>
+</html>

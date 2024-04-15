@@ -1,0 +1,99 @@
+﻿.modal-body {
+    background: #efefef;
+}
+
+.modal-header {
+    padding: 15px 15px 12px 15px;
+    border-bottom: 1px solid #2fdab8;
+    background: #2fdab8;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+}
+
+.modal a {
+        color: #fff;
+    background: #0070c0;
+    padding: 0px 5px 2px 5px;
+}
+
+.main11 {
+    margin: 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    float: left;
+    height: auto;
+}
+
+.login-para {
+    border-bottom: 2px solid #3a3561!important;
+    margin: 0px 0px 15px 0px;
+    padding: 5px 5px;
+    height: auto;
+    background: #221a61!important;
+    line-height: 35px;
+    font-size: 16px;
+    color: White;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-table {
+    width: 100%;
+    height: auto;
+    border-spacing: 0px;
+    font-family: Ebrima;
+    color: #333333;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-size: 13px;
+}
+
+    .login-table td {
+        color: #797777;
+        font-size: 16px;
+    }
+
+    .login-table .form-control {
+        margin-bottom: 7px;
+        -webkit-border-radius: 0 0 0 0;
+        border-radius: 0 0 0 0;
+    }
+
+    .login-table .btn {
+        margin-top: 10px;
+        -webkit-border-radius: 0 0 0 0;
+        border-radius: 0 0 0 0;
+    }
+
+
+.btn-danger {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+}
+
+.btn-primary {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+}
+
+.waiting {
+    padding: 25px 15px 15px 14px;
+    font-size: 16px;
+    bottom: 0px;
+    left: 1px;
+    top: 221px;
+    background: #fff;
+    color: #1a1313;
+    height: 122px!important;
+    z-index: 1000;
+    font-size: 17px;
+    text-align: center;
+    width: 99.8%;
+    position: absolute;
+}

@@ -1,0 +1,16 @@
+<link href="fancybox/jquery.fancybox.css" rel="stylesheet" />
+
+<script src="fancybox/jquery.fancybox.js"></script>
+  <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $.fancybox({
+                href: "popup/popou_2016.aspx",
+                type: "iframe",
+                width: "700",
+                top: "150"
+
+
+            });
+        }); // ready
+    </script> 
+

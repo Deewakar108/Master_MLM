@@ -1,0 +1,48 @@
+﻿Create Table dbo.[Backup_History] ( [Id] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[Database_name] varchar (500)  NULL ,
+[Backup_time] datetime  NULL ,
+[Local_connection] varchar (500)  NULL ,
+[status] varchar (500)  NULL ,
+[Exception_details] varchar (MAX)  NULL ,
+[Sever_connection] varchar (500)  NULL ,
+[start] varchar (500)  NULL ,
+[finish] varchar (500)  NULL   );
+
+Create Table dbo.[BackupsTables] ( [Id] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[Database_name] varchar (500)  NULL ,
+[Sever_connection] varchar (500)  NULL ,
+[local_connection] varchar (500)  NULL ,
+[last_bakup] varchar (50)  NULL ,
+[Exceptions] varchar (MAX)  NULL ,
+[next_backup] bigint  NULL ,
+[backup_per_day] varchar (50)  NULL ,
+[backup_serial] varchar (50)  NULL ,
+[last_changes_in_server] varchar (50)  NULL ,
+[start] varchar (50)  NULL ,
+[finish] varchar (50)  NULL ,
+[backup_status] varchar (50)  NULL   );
+
+Create Table dbo.[ftp_directory_exclude] ( [Id] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[direcotry_name] varchar (500)  NULL   );
+
+Create Table dbo.[Server_File_backup] ( [Id] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[ServerName] varchar (500)  NULL ,
+[ftp_host] varchar (500)  NULL ,
+[ftp_user_id] varchar (500)  NULL ,
+[ftp_password] varchar (500)  NULL ,
+[last_backup] varchar (500)  NULL ,
+[next_backup] varchar (500)  NULL ,
+[last_backup_status] varchar (500)  NULL ,
+[next_backup_idate] int  NULL ,
+[main_location] varchar (500)  NULL   );
+
+Create Table dbo.[ServerSetting] ( [Id] int NOT NULL  IDENTITY(1,1) PRIMARY KEY ,
+[ServerType] varchar (500)  NULL ,
+[ServerIP] varchar (500)  NULL ,
+[UserId] varchar (500)  NULL ,
+[Password] varchar (500)  NULL ,
+[Backup_Location] varchar (500)  NULL ,
+[Backup_Type] varchar (500)  NULL ,
+[Application_Password] varchar (500)  NULL ,
+[server_con] varchar (500)  NULL   );
+

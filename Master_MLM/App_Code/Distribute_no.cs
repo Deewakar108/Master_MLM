@@ -1,0 +1,75 @@
+﻿using Master_MLM.App_Code;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+namespace Master_MLM.AppCode
+{
+    public class Distribute_no
+    {
+        public string Distributeno()
+        {
+            string code = "";
+            Connection con = new Connection();
+            string Connectionstring = con.connect_method();
+            SqlConnection conn = new SqlConnection(Connectionstring);
+            SqlDataAdapter ad = new SqlDataAdapter("select * from Re_Distribute_code  ", conn);
+            DataSet ds = new DataSet();
+            ad.Fill(ds, "Re_Distribute_code");
+            DataTable dt = ds.Tables[0];
+            int rowcount = dt.Rows.Count;
+            if (rowcount == 0)
+            {
+                code = "DI1000";
+                DataRow dr = dt.NewRow();
+                dr[1] = code;
+                dt.Rows.Add(dr);
+                SqlCommandBuilder cb = new SqlCommandBuilder(ad);
+                ad.Update(dt);
+
+            }
+            else
+            {
+
+                code = dt.Rows[0][1].ToString();
+                string product_cod = code.Substring(2);
+                string mackcode = (Convert.ToInt32(product_cod.ToString()) + 1).ToString();
+                string finalcode = "DI" + mackcode;
+                code = finalcode;
+                updatefinalcode(finalcode);
+
+
+
+            }
+            return code;
+
+        }
+        private void updatefinalcode(string finalcode)
+        {
+            Connection con = new Connection();
+            string connectionstring = con.connect_method();
+            SqlConnection conn = new SqlConnection(connectionstring);
+            SqlDataAdapter ad = new SqlDataAdapter("select * from Re_Distribute_code ", conn);
+            DataSet ds = new DataSet();
+            ad.Fill(ds, "Re_Distribute_code");
+            DataTable dt = ds.Tables[0];
+            int rowcount = dt.Rows.Count;
+            if (rowcount == 0)
+            {
+            }
+            else
+            {
+                foreach (DataRow dr in dt.Rows)
+                {
+                    dr[1] = finalcode;
+                    break;
+                }
+                SqlCommandBuilder cb = new SqlCommandBuilder(ad);
+                ad.Update(dt);
+            }
+        }
+    }
+}

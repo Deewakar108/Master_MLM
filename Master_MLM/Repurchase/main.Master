@@ -1,0 +1,395 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Master_MLM.Repurchase.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server" />
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/itm_member/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Custom CSS -->
+    <link href="~/Content/itm_member/css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="~/Content/itm_member/css/morris.css" type="text/css" />
+
+    <!-- Graph CSS -->
+    <link href="~/Content/itm_member/css/font-awesome.css" rel="stylesheet" />
+    <!-- jQuery -->
+    <script src="../../Content/itm_member/js/jquery-2.1.4.min.js"></script>
+    <!-- //jQuery -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="~/Content/itm_member/css/icon-font.min.css" type='text/css' />
+
+
+    <%--<link href="css/profile.css" rel="stylesheet" />--%>
+    <%--<link href="member.css" rel="stylesheet" />--%>
+
+
+    <style>
+        .border {
+            /*border: 1px solid red;*/
+            background-color: none;
+        }
+
+        .no-need-in-this-project {
+            display: none;
+        }
+
+        .logo-w3-agile {
+            padding: 5px 5px 5px 5px;
+            width: 65%;
+        }
+
+        .logo-img {
+            float: left;
+            height: 60px;
+            padding: 0px 15px 0px 0px;
+        }
+
+        .logo-w3-agile h1 {
+            margin: 0;
+            font-size: 25px !important;
+            text-align: left;
+            padding: 12px 0px 0px 0;
+        }
+
+        @media (max-width: 640px) {
+            .sidebar-menu {
+                position: absolute;
+                display: none;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .left-content {
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+        }
+
+        @media (max-width: 384px) {
+            .left-content {
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+        }
+
+        @media (max-width: 414px) {
+            .left-content {
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .left-content {
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .left-content {
+                width: 100%;
+                padding: 0 10px 0 10px;
+            }
+
+            .logo-w3-agile h1 {
+                margin: 0;
+                font-size: 15px;
+                text-align: left;
+                padding: 15px 0px 0px 0;
+                width: 50%;
+                float: left;
+            }
+
+            .logo-w3-agile {
+                width: 100%;
+            }
+
+            html, body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 100%;
+                overflow-x: inherit !important;
+            }
+        }
+    </style>
+    <%-- ------------------Menu------------------- --%>
+    <link href="menu/style.css" rel="stylesheet" />
+    <script src="menu/jquery.min.js"></script>
+    <script src="menu/script.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="page-container">
+            <!--/content-inner-->
+            <div class="left-content">
+                <div class="mother-grid-inner">
+                    <div class="agile3-grids " style="margin-top: 0">
+                        <div class="header-main" style="padding: 0">
+
+                            <div class="logo-w3-agile">
+                                <asp:Image ID="Image1" ImageUrl="../Images/logo.png" class="logo-img" runat="server" />
+                                <h1 style="font-size:25px;"><a href="#">Welcome to Repurchase Profile</a></h1>
+                                <!-- Header -->
+                                <div class="responsive-header">
+                                    <div class="responsive-logobar">
+                                        <a class="menu-button" href="#" title=""><i class="fa fa-bars"></i></a>
+                                    </div>
+                                    <!-- Responsive Logbar -->
+                                    <div class="responsive-menu">
+                                        <img src="../Images/logo.png" class="img-responsive logo-img" style="float: left; margin: 19px 0px 0px 15px; width: 90px;" />
+                                        <a class="close-menu" href="#" title=""><i class="fa fa-remove"></i></a>
+                                        <ul>
+                                            <li><a href="Member_home.aspx" title=" "><i class="fa fa-tachometer"></i>&nbsp;<span>&nbsp;Dashboard</span></a></li>
+                                            <li><a href="Member_home.aspx"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<span>&nbsp;Stock</span></a>
+                                                <ul>
+                                                    <li><a href="Purchase-Stock History.aspx">Stock History </a></li>
+                                                    <li><a href="Stock_Details.aspx">Stock View</a></li>
+                                                    <li><a href="Print_Stock.aspx">Print Stock</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:" title=" "><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<span>&nbsp;Sell Stock</span></a>
+                                                <ul>
+                                                    <li><a href="Sell-Product-to-Member.aspx">Sell Product To member</a></li>
+                                                    <li><a href="Member-Sell-History.aspx">Sell History</a></li>
+                                                </ul>
+                                            </li>
+                                            <%--<li><a href="javascript:" title=" "><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<span>&nbsp;First Purchase Stock</span></a>
+                                                <ul>
+                                                    <li><a href="First-Purchase-Stock-History.aspx">Stock History</a></li>
+                                                    <li><a href="First-Purchase-Stock-Details.aspx">Stock View</a></li>
+                                                    <li><a href="First-purchase-Print-Stock.aspx">Print Product</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:" title=" " class="newss"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<span>&nbsp;First Pur. Sell Stock</span></a>
+                                                <ul>
+                                                    <li><a href="Sell-First-Purchase-Product-to-Member.aspx">Sell Product To Member</a></li>
+                                                    <li><a href="First-purchase-Member-Sell-History.aspx">Sell History</a></li>
+                                                </ul>
+                                            </li>--%>
+                                            <li><a href="javascript:" title=" "><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<span>&nbsp;Sell  Stock To Franchise</span></a>
+                                                <ul>
+                                                    <li><a href="Stock-Sell-To-Franchise.aspx">Stock Sell Franchise</a></li>
+                                                    <li><a href="Stock-Sell-To-Franchise-history.aspx">Stock Sell History</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="javascript:" title=" "><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;<span>&nbsp;My Password</span></a>
+                                                <ul>
+                                                    <li><a href="Changepassword.aspx">Change Password</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="logout.aspx" title=" "><i class="fa fa-power-off"></i>&nbsp;<span>&nbsp;Log Out</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Responsive Header -->
+                            </div>
+                            <div class="profile_details w3l pull-right">
+                                <ul>
+                                    <li class="dropdown profile_details_drop">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <div class="profile_img">
+                                                <span class="prfil-img">
+                                                    <asp:Image ID="imgMember" Style="max-width: 45px; float: left; max-height: 45px;" runat="server" ImageUrl="images/male-icon.png" />
+                                                </span>
+                                                <div class="user-name">
+                                                    <p>
+                                                        <asp:Label ID="lbl_membername" runat="server" Text="Label"></asp:Label>
+                                                    </p>
+                                                </div>
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu drp-mnu">
+                                            <li><a href="Member_1541_profile.aspx"><i class="fa fa-user"></i>Profile</a> </li>
+                                            <li><a href="change_654_password.aspx"><i class="fa fa-cog"></i>My Password</a> </li>
+                                            <li><a href="#"><i class="fa fa-sign-out"></i>
+                                                <asp:LinkButton OnClick="link_logout_Click" ID="LinkButton1" runat="server">Log Out</asp:LinkButton></a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="left-content">
+
+                <div class="mother-grid-inner">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                    <div class="copyrights">
+                        <p>
+                            ©
+                            <asp:Label ID="lblYear" runat="server" Text=""></asp:Label>. All Rights Reserved | Ocean Health Pariwar
+                            <asp:Label ID="lblCompanyName" runat="server" Text=""></asp:Label>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sidebar-menu">
+                <header class="logo1">
+                    <a href="#" class="sidebar-icon"><span class="fa fa-bars"></span></a>
+                </header>
+                <div style="border-top: 1px ridge rgba(255, 255, 255, 0.15)"></div>
+                <div class="menu">
+                    <ul id="menu">
+                        <li><a href="#"><i class="fa fa-tachometer"></i><span>Dashboard</span><div class="clearfix"></div>
+                        </a></li>
+
+                        <li id="Li12">
+                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>Stock</span>
+                                <span class="fa fa-angle-right" style="float: right"></span>
+                                <div class="clearfix"></div>
+                            </a>
+                            <ul id="Ul3">
+                                <li id="Li13"><a href="Purchase-Stock History.aspx">Stock History </a></li>
+                                <li id="Li14"><a href="Stock_Details.aspx">Stock View</a></li>
+                                <li id="Li15"><a href="Print_Stock.aspx">Print Stock</a></li>
+                            </ul>
+                        </li>
+                        <li id="Li16">
+                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>Sell Stock</span>
+                                <span class="fa fa-angle-right" style="float: right"></span>
+                                <div class="clearfix"></div>
+                            </a>
+                            <ul id="Ul4">
+                                <li id="Li17"><a href="Sell-Product-to-Member.aspx">Sell Product To member</a></li>
+                                <li id="Li18"><a href="Member-Sell-History.aspx">Sell History</a></li>
+                            </ul>
+                        </li>
+
+                       <%-- <li id="Li23">
+                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>First Purchase Stock</span>
+                                <span class="fa fa-angle-right" style="float: right"></span>
+                                <div class="clearfix"></div>
+                            </a>
+                            <ul id="Ul5">
+                                <li id="Li3"><a href="First-Purchase-Stock-History.aspx">Stock History</a></li>
+                                <li id="Li25"><a href="First-Purchase-Stock-Details.aspx">Stock View</a></li>
+                                <li id="Li26"><a href="First-purchase-Print-Stock.aspx">Print Product</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li id="Li28">
+                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>First Pur. Sell Stock</span>
+                                <span class="fa fa-angle-right" style="float: right"></span>
+                                <div class="clearfix"></div>
+                            </a>
+                            <ul id="Ul6">
+                                <li id="Li1"><a href="Sell-First-Purchase-Product-to-Member.aspx">Sell Product To Member</a></li>
+                                <li id="Li29"><a href="First-purchase-Member-Sell-History.aspx">Sell History</a></li>
+                            </ul>
+                        </li>--%>
+
+
+                        <li id="Li39">
+                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i><span>Sell  Stock To Franchise</span>
+                                <span class="fa fa-angle-right" style="float: right"></span>
+                                <div class="clearfix"></div>
+                            </a>
+                            <ul id="Ul10">
+                                <li id="Li1x"><a href="Stock-Sell-To-Franchise.aspx">Stock Sell Franchise</a></li>
+                                <li id="Li40"><a href="Stock-Sell-To-Franchise-history.aspx">Stock Sell History</a></li>
+                            </ul>
+                        </li>
+
+                        <li id="Li42">
+                            <a href="#"><i class="fa fa-lock" aria-hidden="true"></i><span>My Password</span>
+                                <span class="fa fa-angle-right" style="float: right"></span>
+                                <div class="clearfix"></div>
+                            </a>
+                            <ul id="Ul11">
+                                <li id="Li43"><a href="Changepassword.aspx">Change Password</a></li>
+                            </ul>
+                        </li>
+
+                        <li id="menu-academico">
+                            <a href="logout.aspx">
+                                <i class="fa fa-power-off"></i>
+                                <span>Log Out</span>
+                                <div class="clearfix"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <script>
+            var toggle = true;
+
+            $(".sidebar-icon").click(function () {
+                if (toggle) {
+                    $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                    $("#menu span").css({ "position": "absolute" });
+                }
+                else {
+                    $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                    setTimeout(function () {
+                        $("#menu span").css({ "position": "relative" });
+                    }, 400);
+                }
+
+                toggle = !toggle;
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                var navoffeset = $(".header-main").offset().top;
+                $(window).scroll(function () {
+                    var scrollpos = $(window).scrollTop();
+                    if (scrollpos >= navoffeset) {
+                        $(".header-main").addClass("fixed");
+                    } else {
+                        $(".header-main").removeClass("fixed");
+                    }
+                });
+
+            });
+        </script>
+        <!--js -->
+        <script src="../../Content/itm_member/js/jquery.nicescroll.js"></script>
+        <script src="../../Content/itm_member/js/scripts.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="../../Content/itm_member/js/bootstrap.min.js"></script>
+
+        <!-- /Bootstrap Core JavaScript -->
+
+    </form>
+</body>
+</html>

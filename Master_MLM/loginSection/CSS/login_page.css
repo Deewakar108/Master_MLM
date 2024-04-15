@@ -1,0 +1,577 @@
+﻿
+.top
+{
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+	float: left;
+	/*border-bottom: 3px double rgba(0, 0, 0, 0.1);*/
+}
+
+.top_linkul
+{
+	margin: 0px 0px 10px 0px;
+	padding: 0px 10px 0px 10px;
+	height: auto;
+	width: auto;
+	float: right;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #D91652;
+}
+
+	.top_linkul li
+	{
+		margin: 0px;
+		padding: 0px 0px 5px 0px;
+		height: auto;
+		width: auto;
+		float: left;
+		list-style-type: none;
+		display: block;
+	}
+
+		.top_linkul li a
+		{
+			margin: 0px;
+			padding: 2px 5px 0px 5px;
+			height: auto;
+			width: auto;
+			float: left;
+			text-decoration: none;
+			color: #fff;
+			line-height: 12px;
+			font-size: 12px;
+			border-right: 1px solid #F4B585;
+			font-weight: bold;
+		}
+
+			.top_linkul li a:hover
+			{
+				color: #E8E4DB;
+			}
+
+.section
+{
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: 100%;
+}
+
+.header {
+   margin: 0px auto;
+	padding: 0px;
+	height: auto;
+	position: fixed;
+    z-index: 99999;
+	width: 100%;
+	float: left;
+	background-color:#ffffff;
+	
+}
+@media only screen and (max-width:800px)
+{
+	.header
+	{
+    margin: 0px auto;
+    padding: 0px;
+    height: auto;
+    position: static;
+    z-index: 99999;
+    background-color: #fff;
+    width: 100%;
+    float: left;
+	}
+	.Business_Plan
+	{
+		margin: 0px 0px 7px 0px !important;
+		padding: 10px !important;
+	}
+	
+}
+
+.menu
+{
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	width: 100%;
+	height: auto;
+	float: right;
+}
+
+.logo
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 100%;
+	height: auto;
+}
+
+.mid_contant
+{
+	margin: 50px 0px 0px 0px;
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+/*.................Business Plan.................*/
+.Business_Plan
+{
+	margin: 15px 0px 7px 0px;
+	padding: 10px;
+	height: auto;
+	width: 100%;
+	float: left;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+}
+
+.Business_Planinner
+{
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	height: auto;
+	width: 100%;
+	float: left;
+	background: rgba(247, 247, 247, 1);
+	border-radius: 3px;
+	box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Business_Planhead
+{
+	margin: 0px 0px 15px 0px;
+	padding: 8px 15px;
+	height: auto;
+	width: 100%;
+	float: left;
+	color: #fff;
+	font-family: 'Terminal Dosis', Arial, sans-serif;
+	text-shadow: 1px 1px 1px #545353;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+	background: #a7cf42;
+	border-bottom: 1px solid #cfcfcf;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.Business_Planpara
+{
+	margin: 0px 0px 15px 0px;
+	padding: 0px 15px 0px 0px;
+	height: auto;
+	width: 100%;
+	float: left;
+	font-family: 'Terminal Dosis', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #1D5A96;
+}
+
+.Business_Plan_ul
+{
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	float: left;
+}
+
+	.Business_Plan_ul li
+	{
+		margin: 0px;
+		padding: 10px 0px;
+		height: auto;
+		width: 80%;
+		float: left;
+		font-family: 'Terminal Dosis', Arial, sans-serif;
+		font-size: 16px;
+		color: #4e4e4e;
+		list-style-type: none;
+		font-weight: bold;
+	}
+
+.Business_Plantable
+{
+	margin: 10px auto;
+	padding: 0px 0px;
+	height: auto;
+	width: 80px;
+}
+
+	.Business_Plantable td
+	{
+		font-family: 'Terminal Dosis', Arial, sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		border: 1px solid #f39a0d;
+	}
+
+	.Business_Plantable tr:hover
+	{
+		color: #fff;
+		background-color: #E62662;
+		font-weight: bold;
+		box-shadow: 2px 2px 2px #ccc;
+		border: 1px solid #f39a0d;
+		transition: all 300ms linear;
+	}
+
+/*.................end Business Plan.................*/
+.footer
+{
+	padding: 10px 0px 0px 0px;
+	color: #f8f8f8;
+	background-color: #E7094C;
+	float: left;
+	width: 100%;
+}
+
+.footer_heading
+{
+	font-size: 14px;
+	line-height: 15px;
+	color: #ffffff;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.footer_ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+	.footer_ul li
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+
+		.footer_ul li a
+		{
+			font-size: 14px;
+			line-height: 22px;
+			color: #ffffff;
+			font-family: 'Open Sans', Arial, sans-serif;
+			text-decoration: none;
+			text-align: left;
+		}
+
+.footer_last
+{
+	text-shadow: none;
+	color: #f5f5f5;
+	padding: 0;
+	padding-top: 0px;
+	margin: 0px 0 0 0;
+}
+
+.footer_last_p
+{
+	color: #f5f5f5;
+	padding: 0px;
+	margin: 20px 0 10px 0;
+}
+
+#sub-footer ul.social-network
+{
+	float: right;
+}
+
+ul.social-network
+{
+	list-style: none;
+	margin: 0;
+	float: right;
+	padding: 20px 0px 20px 0px;
+}
+
+	ul.social-network li
+	{
+		display: inline;
+		margin: 0 5px;
+	}
+
+		ul.social-network li a
+		{
+			color: #fff;
+		}
+/*.................reward pagr.................*/
+
+.reward
+{
+	margin: 10px 0px 30px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.award_box
+{
+	margin: 20px 0px 0px 0px;
+	padding: 5px;
+	height: auto;
+	width: 100%;
+	float: left;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+}
+
+.award_boxinner
+{
+	margin: 0px;
+	padding: 0px 10px;
+	height: auto;
+	width: 100%;
+	float: left;
+	background: none repeat scroll 0 0 #f0f0f0;
+	border-radius: 12px;
+	box-shadow: 3px 3px 3px #ccc;
+}
+
+.award_boxhead
+{
+	margin: 0px;
+	padding: 8px 0px 8px 0px;
+	height: auto;
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: #fff;
+	font-family: 'Terminal Dosis', Arial, sans-serif;
+	text-shadow: 2px 2px 2px #545353;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+/*....................login form............................*/
+
+.login_section
+{
+	height: auto;
+}
+
+.member_loginhead
+{
+	font-family: Ebrima;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin: 10px 0px 25px 0px;
+	padding: 2px 10px;
+	text-shadow: #333 1px 1px 0px;
+	background-color: #a7cf42;
+	border-bottom: 2px solid #D91652;
+}
+/*............... end media....................*/
+
+@media only screen and (min-width:320px)
+{
+
+	.login_section
+	{
+		padding: 0px 15px 0px 15px;
+		margin: 0px;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 480px)
+{
+	.login_section
+	{
+		padding: 0px 15px 0px 15px;
+		margin: 0px auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.login_section
+	{
+		padding: 0px 15px 0px 15px;
+		margin: 0px auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 992px)
+{
+
+	.login_section
+	{
+		padding: 0px 15px 0px 15px;
+		margin: 0px auto;
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width:1200px)
+{
+	.login_section
+	{
+		padding: 0px 15px 0px 15px;
+		margin: 0px auto;
+		width: 80%;
+	}
+}
+/*............... end media....................*/
+
+/*....................end login form............................*/
+
+
+footer
+{
+	width: 100%;
+	height: auto;
+	padding: 7px 0px 0px 0px;
+	border: none;
+	background-color: #D91652;
+	/*background-color: #A8562B;*/
+	border-top: 1px dashed #3e352e;
+}
+
+.footer-big
+{
+	background-color: #281f19;
+	margin: 4px 0px 0px 0px;
+}
+
+	.footer-big h3
+	{
+		width: 100%;
+		color: #d9b151;
+		padding: 0px 0px 5px 0px;
+		font-weight: 400;
+		margin: 10px 0 15px 0;
+		line-height: normal; /*border-bottom: 1px solid #ddd;*/
+		position: relative;
+		line-height: 41px;
+		background-image: url('../images/footer_title_strip.png');
+		background-position: left bottom;
+		background-repeat: repeat-x;
+	}
+
+	/*.footer-big h3::after
+		{
+			background-color: #092586;
+			content: "";
+			display: block;
+			height: 1px;
+			position: absolute;
+			width: 50%;
+			left: 0;
+		}*/
+
+	.footer-big ul
+	{
+		margin: 0px;
+		padding: 0px 0px 15px 5px;
+		width: 100%;
+		height: auto;
+		float: left;
+		box-sizing: border-box;
+	}
+
+		.footer-big ul li
+		{
+			list-style-type: none;
+			border-bottom: 1px dashed #3e352e;
+			padding: 2px 0px 5px 0px;
+		}
+
+			.footer-big ul li a
+			{
+				padding: 0px 0px 0px 0px;
+				color: #E8E4DB;
+				font-family: 'Microsoft Yahei';
+				font-size: 12px;
+				text-decoration: none;
+			}
+
+				.footer-big ul li a:hover
+				{
+					text-decoration: none;
+					color: #d9b151;
+				}
+
+	.footer-big .table tr
+	{
+		border: none;
+	}
+
+	.footer-big .table td
+	{
+		border: none;
+		color: #fff;
+		font-family: 'Microsoft Yahei';
+	}
+
+
+
+footer p
+{
+	color: #fcfafa;
+	padding: 8px 0px 0px 0px;
+}
+
+.rightpara
+{
+	text-align: right;
+}
+
+.upper-footer
+{
+	background-color: #ae0001;
+	/*background: #C26532;*/
+	min-height: 300px;
+	padding: 15px 0px;
+}
+
+	.upper-footer .title-up-footer
+	{
+		font-weight: bold;
+		background: #8b0001;
+		/*background: #cb2200;*/
+		color: #fff;
+		width: 100%;
+		border-bottom: none 2px #ae4901;
+		text-align: center;
+		float: left;
+		height: auto;
+		margin: 0px 0px 10px 0px;
+		line-height: 35px;
+		padding: 0px 0px 0px 0px;
+		text-align: center;
+	}
+
+	.upper-footer .bg-white
+	{
+		background: #fff;
+		overflow: hidden;
+	}
+
+	.upper-footer object
+	{
+		width: 97%;
+		margin: 5px;
+		height: 200px;
+	}
+
+.testimonial
+{
+	padding: 15px;
+	min-height: 260px;
+}
